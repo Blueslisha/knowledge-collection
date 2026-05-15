@@ -1,0 +1,25 @@
+title: 知识集
+description: 个人知识库 · 自动采集 · 每日更新
+url: ""
+baseurl: ""
+
+permalink: pretty
+
+defaults:
+  - scope:
+      path: "daily"
+    values:
+      layout: post
+  - scope:
+      path: "topics"
+    values:
+      layout: post
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+exclude:
+  - README.md
+  - .gitignore

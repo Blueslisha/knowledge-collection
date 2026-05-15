@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install *)",
+      "Bash(python scripts/generate_report.py test)",
+      "Bash(git checkout *)",
+      "Bash(rm \"topics/attention-机制演进.md\")",
+      "WebSearch"
+    ]
+  }
+}

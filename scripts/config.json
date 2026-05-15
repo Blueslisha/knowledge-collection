@@ -1,0 +1,16 @@
+{
+  "topics": [
+    {
+      "name": "LLM 推理优化",
+      "search_query": "LLM inference optimization speculative decoding 2026"
+    },
+    {
+      "name": "AI Agent 框架",
+      "search_query": "AI Agent framework MCP tool use 2026"
+    },
+    {
+      "name": "多模态模型",
+      "search_query": "multimodal LLM vision language model 2026"
+    }
+  ]
+}

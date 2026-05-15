@@ -21,10 +21,10 @@ title: 首页
   <div class="post-list">
     <article class="post-card" style="--i: 0">
       <time class="post-date">2026-05-15</time>
-      <h3 class="post-title"><a href="/daily/2026-05-15/">知识日报 — 2026-05-15</a></h3>
+      <h3 class="post-title"><a href="{{ '/daily/2026-05-15/' | relative_url }}">知识日报 — 2026-05-15</a></h3>
       <p class="post-excerpt">RAG 技术前沿 · AI Agent 框架对比 · 本周值得关注的论文</p>
     </article>
-    <p class="section-footnote">每日 08:00 自动更新 · <a href="/daily/">查看全部 →</a></p>
+    <p class="section-footnote">每日 08:00 自动更新 · <a href="{{ '/daily/' | relative_url }}">查看全部 →</a></p>
   </div>
 </section>
 
@@ -34,7 +34,7 @@ title: 首页
     专题文章
   </h2>
   <div class="topic-grid">
-    <a href="/topics/llm-architecture/" class="topic-card" style="--i: 0">
+    <a href="{{ '/topics/llm-architecture/' | relative_url }}" class="topic-card" style="--i: 0">
       <span class="topic-icon">▴</span>
       <span class="topic-name">LLM 架构深度解析</span>
       <span class="topic-count">1 篇文章</span>

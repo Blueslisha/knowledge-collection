@@ -1,7 +1,9 @@
 title: 知识集
 description: 个人知识库 · 自动采集 · 每日更新
 url: ""
-baseurl: ""
+# GitHub Pages 项目站点(baseurl 需设为 /仓库名, 如 /knowledge-base)
+# 用户/组织站点 (username.github.io) 保持空即可
+baseurl: "/knowledge-collection/"
 
 permalink: pretty
 
@@ -23,3 +25,5 @@ kramdown:
 exclude:
   - README.md
   - .gitignore
+  - Gemfile
+  - Gemfile.lock

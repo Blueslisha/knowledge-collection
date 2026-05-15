@@ -12,8 +12,8 @@ title: 首页
   <div class="hero-divider"></div>
   <p class="hero-desc">由 AI 智能体自动检索、整理、归档的信息集合。涵盖前沿技术、学术动态与深度专题。</p>
   <div class="hero-badge-row">
-    <span class="meta-badge">14 篇条目</span>
-    <span class="meta-badge">2 个专题</span>
+    <span class="meta-badge">3 篇条目</span>
+    <span class="meta-badge">1 个专题</span>
   </div>
 </section>
 
@@ -26,8 +26,13 @@ title: 首页
   <div class="post-list">
     <article class="post-item">
       <time class="post-item-date">2026.05.15</time>
-      <h3 class="post-item-title"><a href="{{ '/daily/2026-05-15/' | relative_url }}">知识日报 — RAG 技术前沿 · AI Agent 框架对比</a></h3>
-      <p class="post-item-excerpt">混合检索策略、轻量化重排序、LangGraph vs CrewAI</p>
+      <h3 class="post-item-title"><a href="{{ '/daily/2026-05-15/' | relative_url }}">知识日报 — MCP 协议 · RAGAS 2.0 · 论文速递</a></h3>
+      <p class="post-item-excerpt">MCP 协议深度解读、RAGAS 评估框架 2.0、LongRoPE 扩展 2048K 上下文</p>
+    </article>
+    <article class="post-item">
+      <time class="post-item-date">2026.05.14</time>
+      <h3 class="post-item-title"><a href="{{ '/daily/2026-05-14/' | relative_url }}">知识日报 — DeepSeek-V3 · 推测解码 · MoE 优化</a></h3>
+      <p class="post-item-excerpt">MLA 注意力机制详解、推测解码实践指南、MoE 训练优化技巧</p>
     </article>
   </div>
 

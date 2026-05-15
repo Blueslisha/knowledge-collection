@@ -1,21 +1,14 @@
+// Zen Minimal — just enough interaction, nothing more
 document.addEventListener('DOMContentLoaded', () => {
-  // Parallax grain overlay offset (subtle)
-  const grain = document.querySelector('.grain');
-  if (grain) {
-    document.addEventListener('mousemove', (e) => {
-      const x = (e.clientX / window.innerWidth) * 4;
-      const y = (e.clientY / window.innerHeight) * 4;
-      grain.style.backgroundPosition = `${x}px ${y}px`;
-    });
-  }
+  // Respect reduced motion
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-  // Staggered card reveal (respects reduced motion)
-  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (prefersReduced) {
-    document.querySelectorAll('.post-card, .topic-card').forEach(el => {
-      el.style.animation = 'none';
-      el.style.opacity = '1';
-      el.style.transform = 'none';
-    });
-  }
+  // Gentle fade-in for post items
+  const items = document.querySelectorAll('.post-item, .topic-item');
+  items.forEach((el, i) => {
+    el.style.opacity = '0';
+    el.style.transition = 'opacity 0.5s ease';
+    el.style.transitionDelay = `${i * 0.06}s`;
+    requestAnimationFrame(() => { el.style.opacity = '1'; });
+  });
 });

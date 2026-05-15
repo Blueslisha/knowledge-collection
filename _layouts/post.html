@@ -4,21 +4,19 @@ layout: default
 
 <article class="post-article">
   <header class="post-header">
-    {% if page.categories %}
     <div class="post-breadcrumb">
       <a href="{{ '/' | relative_url }}">首页</a>
-      <span class="breadcrumb-sep">∕</span>
+      <span class="breadcrumb-sep">/</span>
       {% if page.categories contains 'daily' %}
       <a href="{{ '/daily/' | relative_url }}">日报</a>
       {% else %}
       <a href="{{ '/topics/' | relative_url }}">专题</a>
       {% endif %}
     </div>
-    {% endif %}
     <h1 class="post-title">{{ page.title }}</h1>
     <div class="post-meta">
       {% if page.date %}
-      <time>{{ page.date | date: "%Y 年 %-m 月 %-d 日" }}</time>
+      <time>{{ page.date | date: "%Y.%m.%d" }}</time>
       {% endif %}
       {% if page.tags %}
       <div class="post-tags">
@@ -36,7 +34,7 @@ layout: default
 
   <footer class="post-footer">
     <hr class="post-divider">
-    <p class="post-footer-text">— 本文由 Coze 智能体自动生成 · 信息仅供参考 —</p>
+    <p class="post-footer-text">由 Coze 智能体自动生成</p>
     <a href="{{ '/' | relative_url }}" class="back-link">← 返回首页</a>
   </footer>
 </article>
